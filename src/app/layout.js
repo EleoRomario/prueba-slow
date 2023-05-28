@@ -1,9 +1,7 @@
-'use client'
 import './globals.css'
 import { Poppins } from 'next/font/google'
 import { ThemeAntdProvider } from '@/context/ThemeAntdProvider'
 import ReduxProvider from '@/redux/provider'
-import { LayoutGeneral } from '@/components/templates/LayoutGeneral'
 
 const inter = Poppins({
   subsets: ['latin'],
@@ -20,9 +18,7 @@ export default function RootLayout({ children }) {
     <html lang='en'>
       <ReduxProvider>
         <body className={`${inter.className} `}>
-          <ThemeAntdProvider>
-            <LayoutGeneral>{children}</LayoutGeneral>
-          </ThemeAntdProvider>
+          <ThemeAntdProvider>{children}</ThemeAntdProvider>
         </body>
       </ReduxProvider>
     </html>

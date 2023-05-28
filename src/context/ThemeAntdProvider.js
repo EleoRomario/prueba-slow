@@ -1,10 +1,11 @@
+'use client'
 import { ConfigProvider } from 'antd'
-import { Poppins } from 'next/font/google'
+// import { Poppins } from 'next/font/google'
 
-const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-})
+// const poppins = Poppins({
+//   subsets: ['latin'],
+//   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+// })
 
 export const ThemeAntdProvider = ({ children }) => {
   return (
