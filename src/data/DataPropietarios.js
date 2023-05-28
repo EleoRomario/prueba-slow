@@ -1,0 +1,42 @@
+export const DataPropietarios = [
+  {
+    value: 'Genevieve Bryant',
+    name: 'Genevieve Bryant',
+    phone: '(816) 785-7683',
+    email: 'nibh.aliquam@protonmail.edu',
+    address: 'Ap #131-5770 Sit Av.',
+    dni: 'XKI17ACX5NJ',
+  },
+  {
+    value: 'Orson Haney',
+    name: 'Orson Haney',
+    phone: '1-535-849-5234',
+    email: 'magna.cras.convallis@yahoo.ca',
+    address: '3993 Sapien, St.',
+    dni: 'TAP62UYF1KD',
+  },
+  {
+    value: 'Mercedes Stevens',
+    name: 'Mercedes Stevens',
+    phone: '(408) 415-2771',
+    email: 'vestibulum@icloud.couk',
+    address: '821-834 Suspendisse Av.',
+    dni: 'XBK92DTV1OV',
+  },
+  {
+    value: 'Jessamine Strong',
+    name: 'Jessamine Strong',
+    phone: '1-474-265-6531',
+    email: 'enim.commodo.hendrerit@google.net',
+    address: '327-2291 Congue Ave',
+    dni: 'KTD95LBR5NV',
+  },
+  {
+    value: 'Ali Gibson',
+    name: 'Ali Gibson',
+    phone: '1-462-719-5827',
+    email: 'aenean.egestas@outlook.org',
+    address: '418-7454 Molestie Road',
+    dni: 'IDY56ZQM2OC',
+  },
+]

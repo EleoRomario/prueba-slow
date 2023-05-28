@@ -1,7 +1,14 @@
+'use client'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
+import { ThemeAntdProvider } from '@/context/ThemeAntdProvider'
+import ReduxProvider from '@/redux/provider'
+import { LayoutGeneral } from '@/components/templates/LayoutGeneral'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,8 +17,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang='en'>
+      <ReduxProvider>
+        <body className={`${inter.className} `}>
+          <ThemeAntdProvider>
+            <LayoutGeneral>{children}</LayoutGeneral>
+          </ThemeAntdProvider>
+        </body>
+      </ReduxProvider>
     </html>
   )
 }
